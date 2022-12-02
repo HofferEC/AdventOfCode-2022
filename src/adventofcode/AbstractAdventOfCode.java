@@ -39,6 +39,10 @@ public abstract class AbstractAdventOfCode {
         return readInputAsInts(String.format(DEFAULT_INPUT_PATH_TEMPLATE, day));
     }
 
+    public List<Integer> readInputAsIntsForDayAcceptNull(int day) throws Exception {
+        return readInputAsIntsAcceptNull(String.format(DEFAULT_INPUT_PATH_TEMPLATE, day));
+    }
+
     public List<Integer> readExampleInputAsIntsForDay(int day) throws Exception {
         return readInputAsInts(String.format(DEFAULT_EXAMPLE_INPUT_PATH_TEMPLATE, day));
     }
@@ -47,10 +51,10 @@ public abstract class AbstractAdventOfCode {
         return readInputAsInts(path, 10);
     }
 
-    public List<Integer> readInputAsIntsAcceptNull(String path, int radix) throws Exception {
+    public List<Integer> readInputAsIntsAcceptNull(String path) throws Exception {
         return readInput(path).stream().map(i -> {
             try {
-                return Integer.parseInt(i, radix);
+                return Integer.parseInt(i);
             } catch (Exception e) {
                 return null;
             }

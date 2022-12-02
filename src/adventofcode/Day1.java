@@ -8,7 +8,7 @@ public class Day1 extends AbstractAdventOfCode {
 
     @Override
     public Object solvePartOne() throws Exception {
-        List<Integer> ints = readInputAsIntsForDay(1);
+        List<Integer> ints = readInputAsIntsForDayAcceptNull(1);
         int highest = 0;
         int current = 0;
         for (Integer i : ints) {
@@ -25,7 +25,7 @@ public class Day1 extends AbstractAdventOfCode {
 
     @Override
     public Object solvePartTwo() throws Exception {
-        List<Integer> ints = readInputAsIntsForDay(1);
+        List<Integer> ints = readInputAsIntsForDayAcceptNull(1);
         List<Integer> totals = new ArrayList<>();
         int current = 0;
         for (Integer i : ints) {
