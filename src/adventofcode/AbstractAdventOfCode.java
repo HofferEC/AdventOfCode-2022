@@ -47,6 +47,16 @@ public abstract class AbstractAdventOfCode {
         return readInputAsInts(path, 10);
     }
 
+    public List<Integer> readInputAsIntsAcceptNull(String path, int radix) throws Exception {
+        return readInput(path).stream().map(i -> {
+            try {
+                return Integer.parseInt(i, radix);
+            } catch (Exception e) {
+                return null;
+            }
+        }).collect(Collectors.toList());
+    }
+
     public List<Integer> readInputAsInts(String path, int radix) throws Exception {
         return readInput(path).stream().map(i -> Integer.parseInt(i, radix)).collect(Collectors.toList());
     }
