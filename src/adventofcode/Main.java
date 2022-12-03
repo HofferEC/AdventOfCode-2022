@@ -9,6 +9,7 @@ public class Main {
         calendar[1] = new Day1();
         calendar[2] = new Day2();
         calendar[3] = new Day3();
+        calendar[4] = new Day4();
 
         int day = Integer.parseInt(args[0]);
 

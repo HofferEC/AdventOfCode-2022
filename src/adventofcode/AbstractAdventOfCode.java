@@ -101,6 +101,10 @@ public abstract class AbstractAdventOfCode {
         return board;
     }
 
+    public void print(Object output) {
+        System.out.println(output.toString());
+    }
+
     public abstract Object solvePartOne() throws Exception;
     public abstract Object solvePartTwo() throws Exception;
 
