@@ -11,8 +11,8 @@ public class Main {
         calendar[3] = new Day3();
         calendar[4] = new Day4(); // lost to the archives
         calendar[5] = new Day5();
-//        calendar[6] = new Day4();
-//        calendar[7] = new Day4();
+        calendar[6] = new Day6();
+        calendar[7] = new Day7();
 //        calendar[8] = new Day4();
 //        calendar[9] = new Day4();
 //        calendar[10] = new Day4();
